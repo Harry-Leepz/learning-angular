@@ -10,6 +10,6 @@ export class TestComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  randomComment = 'OMG Harry, we are finally learning Angular';
-  name = '';
+  randomComment: string = 'OMG Harry, we are finally learning Angular';
+  name: string = 'Harry';
 }

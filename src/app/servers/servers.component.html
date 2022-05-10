@@ -10,12 +10,15 @@
 <hr />
 
 <label>{{ serverName }}</label>
-<input
+
+<input type="text" class="form-control" [(ngModel)]="serverName" />
+
+<!-- <input
   type="text"
   class="form-control"
   (input)="updateServerName($event)"
   [placeholder]="serverName"
-/>
+/> -->
 
 <hr />
 <p>{{ onClickStatus }}</p>

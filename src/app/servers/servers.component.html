@@ -9,9 +9,17 @@
 
 <hr />
 
-<label>{{ serverName }}</label>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="serverName"
+  placeholder="Enter the server name"
+/>
 
-<input type="text" class="form-control" [(ngModel)]="serverName" />
+<button (click)="setServerName()" class="btn btn-warning">
+  Create New Server
+</button>
+<p>{{ serverCreationStatus }}</p>
 
 <!-- <input
   type="text"

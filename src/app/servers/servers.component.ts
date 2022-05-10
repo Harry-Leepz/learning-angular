@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   newServer = true;
   onClickStatus = 'Button has NOT been clicked!';
-  serverName = 'Server Name';
+  serverName = '';
+  serverCreationStatus = 'No server has been created';
 
   constructor() {
     setTimeout(() => {
@@ -20,6 +21,11 @@ export class ServersComponent implements OnInit {
 
   onClickStatusChanged() {
     this.onClickStatus = 'Button has been clicked!!';
+  }
+
+  setServerName() {
+    this.serverCreationStatus =
+      'A new server was created with the name ' + this.serverName;
   }
 
   updateServerName(event) {

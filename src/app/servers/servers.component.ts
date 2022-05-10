@@ -6,9 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.css'],
 })
 export class ServersComponent implements OnInit {
-  newServer = false;
+  newServer = true;
+  onClickStatus = 'Button has NOT been clicked!';
 
-  constructor() {}
+  constructor() {
+    setTimeout(() => {
+      return (this.newServer = false);
+    }, 3000);
+  }
 
   ngOnInit(): void {}
+
+  onClickStatusChanged() {
+    this.onClickStatus = 'Button has been clicked!!';
+  }
 }

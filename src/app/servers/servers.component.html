@@ -1,5 +1,13 @@
 <p>This is the Servers Component</p>
-<button [disabled]="!newServer" class="btn btn-info">Create New Server</button>
+<button
+  (click)="onClickStatusChanged()"
+  [disabled]="newServer"
+  class="btn btn-info"
+>
+  Create New Server
+</button>
+
+<p>{{ onClickStatus }}</p>
 
 <app-test></app-test>
 <app-test></app-test>

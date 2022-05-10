@@ -11,5 +11,4 @@ export class TestComponent implements OnInit {
   ngOnInit(): void {}
 
   randomComment: string = 'This is from the Test Component';
-  name: string = '';
 }

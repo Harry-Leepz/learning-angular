@@ -7,6 +7,17 @@
   Create New Server
 </button>
 
+<hr />
+
+<label>{{ serverName }}</label>
+<input
+  type="text"
+  class="form-control"
+  (input)="updateServerName($event)"
+  [placeholder]="serverName"
+/>
+
+<hr />
 <p>{{ onClickStatus }}</p>
 
 <app-test></app-test>

@@ -1,4 +1,5 @@
-<p>This is the Servers Component</p>
+<h3>Example using Event Binding</h3>
+<p>{{ onClickStatus }}</p>
 <button
   (click)="onClickStatusChanged()"
   [disabled]="newServer"
@@ -8,7 +9,7 @@
 </button>
 
 <hr />
-
+<h3>Example using Two Way Data Binding</h3>
 <input
   type="text"
   class="form-control"
@@ -29,8 +30,3 @@
 /> -->
 
 <hr />
-<p>{{ onClickStatus }}</p>
-
-<app-test></app-test>
-<app-test></app-test>
-<app-test></app-test>

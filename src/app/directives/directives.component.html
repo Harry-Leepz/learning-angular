@@ -1,3 +1,18 @@
-<div class="text-center text-danger">
-  <h2>Let's learn about Angular Directives</h2>
+<div class="text-center">
+  <h2 class="text-danger">Let's learn about Angular Directives</h2>
+  <h3>What are Directives ??</h3>
+  <h4>Directives are intructions in the DOM!!!</h4>
+</div>
+
+<div>
+  <h2>*ngIf</h2>
+  <p>
+    The ngIf Directive can be used to show or hide elements based on true or
+    false expressions
+  </p>
+  <h3>Example:</h3>
+  <button (click)="onButtonClick()" class="btn btn-danger">
+    CLICK ME I AM A BUTTON!
+  </button>
+  <p *ngIf="buttonClicked" class="text-success">{{ randomStatement }}</p>
 </div>

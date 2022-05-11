@@ -21,3 +21,26 @@
   </button>
   <p *ngIf="buttonClicked" class="text-success">{{ randomStatement }}</p>
 </div>
+
+<hr />
+
+<div>
+  <h2>[ngStyle]</h2>
+  <p>
+    ngStyle is a ATTRIBUTE directive that can be used to change the style
+    property of an element. It takes a JavaScript object with colon seperated
+    key value pair, key being the style property, and the value being an
+    expression.
+  </p>
+  <h3>Example:</h3>
+  <p>
+    The paragraph element below will either be colored
+    <span class="text-danger">Red</span> or
+    <span class="text-success">Green</span> depending of whether the number
+    randomly generated with the Math.random() is greater than 0.5. The result of
+    the getColor() method is assigned using the [ngStyle] directive
+  </p>
+  <p [ngStyle]="{ color: getColor() }">Text color will be green or red</p>
+</div>
+
+<hr />

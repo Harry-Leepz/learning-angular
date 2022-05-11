@@ -9,12 +9,20 @@ export class DirectivesComponent implements OnInit {
   buttonClicked = false;
   randomStatement = 'Button has not been clicked';
 
-  constructor() {}
+  serverStatus = '';
+
+  constructor() {
+    this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
+  }
 
   ngOnInit(): void {}
 
   onButtonClick() {
     this.buttonClicked = true;
     this.randomStatement = 'Woop! Woop! Button has been Clicked successfully';
+  }
+
+  getColor() {
+    return this.serverStatus === 'online' ? 'green' : 'red';
   }
 }

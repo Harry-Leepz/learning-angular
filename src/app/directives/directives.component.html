@@ -44,3 +44,28 @@
 </div>
 
 <hr />
+
+<div>
+  <h2>[ngClass]</h2>
+  <p>
+    ngStyle is a ATTRIBUTE directive that can be used to change the CSS class
+    dynamically of an element. It takes a JavaScript object with colon seperated
+    key value pair, key being the CSS class name property, and the value being
+    an expression.
+  </p>
+  <h3>Example:</h3>
+  <p>
+    The paragraph element below will have the .green or .red CSS class applied,
+    depending of whether the number randomly generated with the Math.random() is
+    greater than 0.5 and the serverStatus is set as 'online'
+  </p>
+  <p
+    [ngClass]="{
+      green: serverStatus === 'online',
+      red: serverStatus === 'offline'
+    }"
+  >
+    Text color will be green or red depending on whether the serverStatus in
+    'online' or 'offline'
+  </p>
+</div>

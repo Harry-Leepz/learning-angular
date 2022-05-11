@@ -10,6 +10,7 @@ export class DirectivesComponent implements OnInit {
   randomStatement = 'Button has not been clicked';
 
   serverStatus = '';
+  servers = ['Server 1', 'Server 2', 'Server 3', 'Server 4', 'Server 5'];
 
   constructor() {
     this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';

@@ -69,3 +69,21 @@
     'online' or 'offline'
   </p>
 </div>
+
+<hr />
+
+<div>
+  <h2>*ngFor</h2>
+  <p>
+    *ngFor is a STRUCTURAL directive that can be used to iterate and output a
+    list of elements or even components.The syntax is similar to a for of loop,
+    by declaring a temporary variable used to iterate over the list
+  </p>
+  <h3>Example:</h3>
+  <p>
+    The list has 5 servers, and so there are 5 paragraph elements generated.
+  </p>
+  <p class="text-info" *ngFor="let server of servers">
+    This a server from a list
+  </p>
+</div>

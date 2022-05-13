@@ -1,5 +1,9 @@
 <div class="container">
-  <app-form-element></app-form-element>
+  <app-form-element
+    (serverCreated)="onServerAdded($event)"
+    (blueprintCreated)="onBlueprintAdded($event)"
+  >
+  </app-form-element>
   <hr />
   <div class="row">
     <div class="col-xs-12">
